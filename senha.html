@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefinir Senha</title>
+    <link rel="stylesheet" href="css/senha.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="images/image/logo.png" style="width: 32px; height: 32px;">
+</head>
+<body>
+    <div class="back-button-container">
+        <a href="login.html" class="back-button">
+            <span class="material-icons">
+                chevron_left
+            </span>
+        </a>
+    </div>
+
+    <div class="container">
+        <h2>Redefinir senha</h2>
+        <form id="reset-form">
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+            </div>
+            <button type="submit" class="btn"><a href="login.html">Enviar</a></button>
+        </form>
+
+        <div class="message-success hidden" id="success-message">
+            <span class="material-icons">check</span>
+            <p>Um link para redefinir sua senha foi enviado para seu e-mail</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

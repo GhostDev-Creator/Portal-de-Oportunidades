@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #000d97;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    height: 85px;
+    margin-right: 15px;
+}
+
+.logo h1 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #028ACD;
+    text-decoration: underline;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.btn-login, .btn-register {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 0.95em;
+}
+
+.btn-login {
+    color: #007bff;
+    border: 1px solid #007bff;
+    background-color: transparent;
+}
+
+.btn-login:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-register {
+    color: #fff;
+    background-color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.btn-register:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.detalhe-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.detalhe-oportunidade {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    flex-grow: 1;
+}
+
+.detalhe-oportunidade h2 {
+    font-size: 2rem;
+    color: #292929;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.detalhe-oportunidade p#subtitulo-oportunidade {
+    font-size: 1.1em;
+    color: #666;
+    font-style: normal;
+    margin-bottom: 25px;
+}
+
+.detalhes-principais {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.detalhes-principais p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.detalhes-principais p strong {
+    color: #333;
+    font-weight: bold;
+}
+
+.descricao-completa h3 {
+    font-size: 1.5rem;
+    color: #292929;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.descricao-completa p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.acoes-oportunidade {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-acao {
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-acao:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn-acao:last-child {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.btn-acao:last-child:hover {
+    background-color: #e6f2ff;
+    color: #0056b3;
+}
+
+.calendario-detalhe {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    width: 300px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 20px;
+}
+
+.calendario-detalhe h3 {
+    color: #007bff;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.calendar {
+    width: 100%;
+    text-align: center;
+}
+
+.header-calendar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.header-calendar button {
+    background: transparent;
+    color: #007bff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.header-calendar button:hover {
+    color: #0056b3;
+}
+
+#month-year {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.days-week {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.days-week th {
+    padding: 10px 0;
+    font-weight: 600;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.days-week td {
+    padding: 10px 5px;
+    border: 1px solid #eee;
+    transition: background-color 0.2s ease;
+}
+
+.days-week td.other-month {
+    color: #ccc;
+    background-color: #f9f9f9;
+}
+
+.days-week td.today {
+    background-color: #c3e0ff;
+    font-weight: bold;
+}
+
+.days-week td.event-day {
+    background-color: #d4edda;
+    cursor: pointer;
+}
+
+.days-week td.event-day:hover {
+    background-color: #c3e6cb;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer p {
+    font-size: 0.9em;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ccc;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    nav {
+        margin-top: 15px;
+        margin-left: 0; 
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    .auth-buttons {
+        margin-top: 15px;
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer p {
+        margin-bottom: 15px;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+
+    .social-links a {
+        margin: 5px 0;
+    }
+
+    .detalhe-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .detalhe-oportunidade, .calendario-detalhe {
+        width: 90%;
+        max-width: 450px;
+        margin-bottom: 30px;
+    }
+
+    .acoes-oportunidade {
+        justify-content: center;
+    }
+}
+
+.primeira-cor {
+    color: #007bff;
+}
+
+.days-week td.selected-day {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}

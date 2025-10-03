@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #000d97;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 85px;
+    margin-right: 15px;
+}
+
+.header h1 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #028ACD;
+    text-decoration: underline;
+}
+
+.sobre-nos-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.missao-bloco {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-top: 1px solid #eee; 
+}
+
+.missao-bloco h3 {
+    color: #002fff; 
+    font-size: 1.3em;
+    font-weight: 600;
+    border-bottom: 3px solid #002fff; 
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    width: 800px; 
+}
+
+.bloco-titulo {
+    background-color: #002fff; 
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 8px 0 0;
+}
+
+.bloco-titulo h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.missao-texto p {
+    font-size: 1em;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.desafio-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    min-height: 350px;
+}
+
+.texto-desafio, .lista-encontrada {
+    flex: 1; 
+    position: relative; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.texto-desafio {
+    align-items: flex-start;
+}
+
+.lista-encontrada {
+    align-items: flex-start;
+}
+
+.texto-desafio h3 {
+    color: #002fff;
+    font-size: 1.3em;
+    font-weight: 600;
+    border-bottom: 3px solid #002fff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    width: 405px;
+}
+
+.bloco-texto {
+    width: 100%;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    min-height: 250px; 
+    padding: 20px;
+    border-left: 4px solid #002fff;
+    border-radius: 10px;
+}
+
+.bloco-texto p {
+    width: 85%; 
+    max-width: none;
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bloco-lista {
+    margin-top: 61px;
+    width: 50%;
+    height: 25%;
+    background-color: #ffffff;
+    display: block; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.lista-encontrada h3 {
+    color: #002fff;
+    font-size: 1.3em;
+    font-weight: 600;
+    border-bottom: 3px solid #002fff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    width: 310px;
+}
+
+.lista-encontrada ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-encontrada ul li {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.check-icon {
+    color: #002fff;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer p {
+    font-size: 0.9em;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ccc;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.primeira-cor {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+        height: auto;
+    }
+
+    .header .logo {
+        margin-bottom: 15px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .header .logo img {
+        height: 60px;
+    }
+
+    .header h1 {
+        font-size: 1em;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-around;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .nav-menu a {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
+
+    .container, .sobre-nos-content {
+        padding: 0 15px;
+        margin: 20px auto;
+    }
+
+    .missao-bloco h3, .texto-desafio h3, .lista-encontrada h3 {
+        width: 100%; 
+        max-width: 100%;
+    }
+    
+    .missao-bloco h3 {
+        width: fit-content; 
+    }
+
+    .bloco-titulo {
+        padding: 15px;
+    }
+
+    .bloco-titulo h2 {
+        font-size: 1.5em;
+    }
+
+    .desafio-container {
+        flex-direction: column; 
+        gap: 20px; 
+        min-height: auto; 
+        padding: 20px;
+    }
+
+    .texto-desafio, .lista-encontrada {
+        flex: none; 
+        width: 100%;
+        align-items: flex-start; 
+    }
+    
+    .bloco-texto {
+        min-height: auto;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .bloco-texto p {
+        width: 100%; 
+        text-align: left; 
+        font-size: 0.9em;
+    }
+
+    .bloco-lista {
+        width: 100%; 
+        margin-top: 20px; 
+        height: auto;
+    }
+
+    .linha-vertical {
+        display: none; 
+    }
+    
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .social-links {
+        margin-top: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .social-links a {
+        margin: 0 10px;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Oportunidades</title>
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="icon" href="images/image/logo.png" style="width: 32px; height: 32px;">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="images/image/logo.png" alt="Logo Portal de Oportunidades">
+            <h1>
+                <span class="primeira-cor">Portal de</span><br><span class="segunda-cor">OPORTUNIDADES</span>
+            </h1>
+        </div>
+        <nav class="nav-menu">
+            <a href="dash.html">Início</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="contato.html">Contato</a>
+            <a href="dash.html" class="logout-link">Voltar</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="contato" class="contato">
+            <h2>Entre em Contato</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione o motivo do contato</option>
+                        <option value="duvida-eventos">Dúvida sobre um evento</option>
+                        <option value="Sugestão">Sugestão de evento para divulgação</option>
+                        <option value="reportar_problema">Reportar um problema técnico</option>
+                        <option value="outro">Outro Assunto</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Portal de Oportunidades. Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="#"><img src="images/icons/icon-facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/icons/icon-x.png" alt="X"></a>
+            <a href="#">Política de Privacidade</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

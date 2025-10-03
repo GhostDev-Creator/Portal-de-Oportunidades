@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #9ac4ff, #1f62e6);
+}
+
+.login-container {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+.login-container h2 {
+    color: #0000FF;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #E6EEF9;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    width: 100%;
+}
+
+.primary-btn {
+    background-color: #0303ff;
+    color: #d8e5fe;
+    margin-bottom: 20px;
+}
+
+.primary-btn:hover {
+    background-color: #0000CC;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.text-link {
+    color: #0000FF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.text-link:hover {
+    color: #0000CC;
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+.back-button-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #E6EEF9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.back-button:hover {
+    transform: scale(1.05);
+}
+
+.back-button .material-icons {
+    font-size: 36px;
+    color: #0000FF;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    color: #779bfe;
+}

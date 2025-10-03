@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-section {
+    background-color: #E6EEF9;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.left-section h1 {
+    color: #0F34A6;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.left-section p {
+    color: #4A4A4A;
+    font-size: 1rem;
+}
+
+.logo-container img {
+    width: 200px;
+    margin-bottom: -50px;
+}
+
+.right-section {
+    background: linear-gradient(135deg, #303dcc, #311B92);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.btn {
+    background-color: #FFFFFF;
+    color: #1A237E;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+a {
+    color: #0F34A6;
+}
+
+a:hover {
+    color: #779bfe;
+}
+
+@media (max-width: 1024px) {
+    .left-section h1 {
+        font-size: 2.2rem;
+    }
+    .btn {
+        padding: 12px 35px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .container {
+        flex-direction: column; 
+        min-height: 100vh; 
+        height: auto; 
+    }
+    
+    .left-section, .right-section {
+        width: 100%;
+        height: auto; 
+        padding: 40px 20px;
+    }
+    
+    .left-section {
+        justify-content: flex-start; 
+        min-height: 35vh;
+    }
+
+    .right-section {
+        justify-content: center;
+        min-height: 65vh;
+    }
+
+    .logo-container img {
+        width: 150px; 
+        margin-bottom: 10px;
+        margin-top: 30px; 
+    }
+    
+    .left-section h1 {
+        font-size: 2rem; 
+        margin-top: 10px; 
+    }
+
+    .left-section p {
+        font-size: 0.95rem; 
+        max-width: 90%;
+        margin-bottom: 30px; 
+    }
+
+    .btn {
+        padding: 15px 40px;
+        font-size: 1.1rem; 
+        width: 80%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .left-section {
+        min-height: 30vh;
+    }
+
+    .right-section {
+        min-height: 70vh;
+    }
+    
+    .left-section h1 {
+        font-size: 1.6rem;
+    }
+    
+    .left-section p {
+        font-size: 0.9rem;
+    }
+
+    .logo-container img {
+        width: 100px;
+        margin-bottom: 5px;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 1rem;
+        width: 90%; 
+    }
+}

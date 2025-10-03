@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Oportunidade</title>
+    <link rel="stylesheet" href="css/detalhes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="images/image/logo.png" style="width: 32px; height: 32px;">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/image/logo.png" alt="Logo Portal de Oportunidades">
+            <h1>
+                <span>Portal de</span><br><span class="primeira-cor">OPORTUNIDADES</span>
+            </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="dash.html">Início</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="dash.html" class="logout-link">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container detalhe-container">
+        <section class="detalhe-oportunidade">      
+            <h2 id="titulo-oportunidade">Título da Oportunidade</h2>
+            <p id="subtitulo-oportunidade">Subtítulo/Tipo</p>
+            <div class="detalhes-principais">
+                <p><strong>Tipo:</strong> <span id="tipo-oportunidade-detalhe"></span></p>
+                <p><strong>Área:</strong> <span id="area-interesse-detalhe"></span></p>
+                <p><strong>Data Limite/Evento:</strong> <span id="data-oportunidade-detalhe"></span></p>
+                <p><strong>Público-Alvo:</strong> <span id="publico-alvo-detalhe"></span></p>
+            </div>
+            
+            <div class="descricao-completa">
+                <h3>Descrição Completa</h3>
+                <p id="descricao-oportunidade">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            
+            <div class="acoes-oportunidade">
+                <a href="#" id="link-externo" class="btn-acao" target="_blank">Inscreva-se Agora <i class="fas fa-external-link-alt"></i></a>
+                <a href="#" id="adicionar-calendario" class="btn-acao">Adicionar ao Calendário <i class="far fa-calendar-plus"></i></a>
+            </div>
+        </section>
+
+        <aside class="calendario-detalhe">
+            <h3>Calendário de Eventos</h3>
+            <div class="calendar">
+                <div class="header-calendar">
+                    <button id="prev-month"><i class="fas fa-chevron-left"></i></button>
+                    <h4 id="month-year"></h4>
+                    <button id="next-month"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <table class="days-week">
+                    <thead>
+                        <tr>
+                            <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendar-body">
+                        </tbody>
+                </table>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Portal de Oportunidades. Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="#"><img src="images/icons/icon-facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/icons/icon-x.png" alt="X"></a>
+            <a href="#">Política de Privacidade</a>
+        </div>
+    </footer>
+
+    <script src="js/detalhes.js"></script>
+</body>
+</html>

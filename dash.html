@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Oportunidades</title>
+    <link rel="stylesheet" href="css/dash.css">
+    <link rel="icon" href="images/image/logo.png" style="width: 32px; height: 32px;">
+    </head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <img src="images/image/logo.png" alt="Logo Portal de Oportunidades">
+            <h1>
+                <span>Portal de</span><br><span class="primeira-cor">OPORTUNIDADES</span>
+            </h1>
+        </div>
+        <nav class="nav-menu">
+            <a href="dash.html">Início</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="contato.html">Contato</a>
+            <a href="index.html" class="logout-link">Sair</a> 
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="tabs">
+            <button class="tab-button active" onclick="filterCards('all')">Todas</button>
+            <button class="tab-button" onclick="filterCards('concurso')">Concursos</button>
+            <button class="tab-button" onclick="filterCards('palestra')">Palestras</button>
+            <button class="tab-button" onclick="filterCards('edital')">Editais</button>
+            <button class="tab-button" onclick="filterCards('outros')">Outros</button>
+        </div>
+
+        <div class="cards-container">
+            <div class="card concurso">
+                <div class="card-header">
+                    <h2>Concurso de Culinária</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/icon-batalha.png" alt="Ícone Culinária" class="card-icon">
+                    <h3>Batalha de Talentos</h3>
+                    <p>Data Limite: 15/11/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="1">Ver Detalhes</button>
+                </div>
+            </div>
+            <div class="card palestra">
+                <div class="card-header">
+                    <h2>Palestra sobre Inteligência Artificial</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/icon-ia.png" alt="Ícone IA" class="card-icon">
+                    <h3>Futuro da IA</h3>
+                    <p>Data Limite: 10/11/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="2">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card edital">
+                <div class="card-header">
+                    <h2>Edital de Fomento à Pesquisa</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/icon-pesquisa.png" alt="Ícone Pesquisa" class="card-icon">
+                    <h3>Bolsas de Mestrado</h3>
+                    <p>Data Limite: 20/11/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="3">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card concurso">
+                <div class="card-header">
+                    <h2>Concurso de Artes Visuais</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/icon-artes.png" alt="Ícone Artes Visuais" class="card-icon">
+                    <h3>Expo Jovem Artista</h3>
+                    <p>Data Limite: 25/11/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="4">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card palestra">
+                <div class="card-header">
+                    <h2>Palestra sobre Empreendedorismo</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/icon-empreendedorismo.png" alt="Ícone Empreendedorismo" class="card-icon">
+                    <h3>Estratégias de Marketing</h3>
+                    <p>Data Limite: 15/11/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="5">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card outros">
+                <div class="card-header">
+                    <h2>Tecnologia Front-End</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/icon-frontend.png" alt="Ícone Frontend" class="card-icon">
+                    <h3>Hackathon de Frontend</h3>
+                    <p>Data Limite: 15/12/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="6">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card concurso">
+                <div class="card-header">
+                    <h2>Concurso de Culinária</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/icon-culinaria.png" alt="Ícone Culinária" class="card-icon">
+                    <h3>Roda de Ideias Culinárias</h3>
+                    <p>Data Limite: 30/11/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="7">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card outros">
+                <div class="card-header">
+                    <h2>Música e Dança</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/icon-musica.png" alt="Ícone Música e Dança" class="card-icon">
+                    <h3>Oficina de Ritmos Afro-Brasileiros</h3>
+                    <p>Data Limite: 05/12/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="8">Ver Detalhes</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Portal de Oportunidades. Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="#"><img src="images/icons/icon-facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/icons/icon-x.png" alt="X"></a>
+            <a href="#">Política de Privacidade</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
