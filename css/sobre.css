@@ -253,38 +253,20 @@ body {
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
-        align-items: center;
-        padding: 15px 20px;
-        height: auto;
-    }
-
-    .header .logo {
-        margin-bottom: 15px;
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .header .logo img {
-        height: 60px;
+        padding: 15px;
     }
 
     .header h1 {
-        font-size: 1em;
+        font-size: 1.5em;
+        margin-top: 10px;
     }
 
     .nav-menu {
-        display: flex;
-        flex-direction: row; 
-        justify-content: space-around;
-        width: 100%;
-        padding: 0 10px;
+        margin-top: 15px;
     }
 
     .nav-menu a {
-        margin-left: 0;
-        margin-right: 0;
-        padding: 5px 10px;
-        font-size: 0.9em;
+        margin: 0 10px;
     }
 
     .container, .sobre-nos-content {
@@ -358,5 +340,15 @@ body {
 
     .social-links a {
         margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.3em;
+    }
+
+    .tab-button {
+        font-size: 0.9em;
     }
 }
