@@ -246,53 +246,28 @@ body {
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
-        align-items: center;
         padding: 15px;
-    }
-
-    .header .logo {
-        margin-bottom: 10px;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .header .logo img {
-        height: 60px;
     }
 
     .header h1 {
         font-size: 1.5em;
-        margin-top: 5px;
-        margin-bottom: 15px; /* Adiciona margem após o título */
+        margin-top: 10px;
     }
 
-    /* O nav-menu agora atua como um container flexível horizontal para o menu e logout */
-    /* Assumindo que o logout-link está DENTRO ou logo após o nav-menu no HTML */
     .nav-menu {
-        margin-top: 0;
-        display: flex;
-        flex-direction: row; 
-        flex-wrap: wrap; /* Permite quebrar se não houver espaço suficiente */
-        justify-content: space-around; 
-        width: 100%;
-        padding: 0 5px;
+        margin-top: 15px;
     }
 
     .nav-menu a {
-        margin: 0 5px; /* Espaçamento entre os links */
-        padding: 5px;
-        text-align: center;
-        font-size: 0.9em; /* Levemente reduzido */
-        flex-grow: 1; /* Permite que os links ocupem espaço uniformemente */
+        margin: 0 10px;
     }
     
     .logout-link {
-        /* Ajusta o logout para continuar na linha */
         margin-top: 0 !important;
-        margin-left: 10px !important; /* Espaço após o último link do menu */
+        margin-left: 10px !important;
         padding: 8px 15px;
-        font-size: 0.9em !important;
-        white-space: nowrap; /* Impede que o texto do botão quebre */
+        font-size: 1.2em !important;
+        white-space: nowrap;
     }
     
     .tabs {
@@ -346,26 +321,11 @@ body {
         font-size: 1.3em;
     }
 
-    .tabs {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
     .tab-button {
         font-size: 0.9em;
-        width: 45%; 
-    }
-    
-    /* Permite que o menu quebre para duas linhas se necessário em telas muito pequenas */
-    .nav-menu {
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
-    .nav-menu a, .logout-link {
-        margin: 5px 5px !important; /* Mais espaço entre os itens em telas estreitas */
-        flex-grow: 0; /* Desativa o crescimento para ter mais controle */
-        width: auto;
+    .logout-link{
+        font-size: 1.3em;
     }
 }
