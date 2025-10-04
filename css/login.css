@@ -55,8 +55,13 @@ body {
     margin-bottom: 20px;
 }
 
-.primary-btn:hover {
+.primary-btn:hover{
     background-color: #0000CC;
+    color: #b3c6ff;
+}
+
+.primary-btn a {
+    color: #b3c6ff;
 }
 
 .links-container {
