@@ -56,13 +56,11 @@ body {
 
 .nav-menu a:hover {
     color: #028ACD;
-    text-decoration: underline;
 }
 .logout-link {
     text-decoration: none !important; 
     color: white !important;
     margin-left: 30px !important; 
-    
     background-color: #000d97; 
     padding: 8px 15px;
     border-radius: 5px;

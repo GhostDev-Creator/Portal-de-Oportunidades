@@ -80,7 +80,6 @@ body {
 
 .text-link:hover {
     color: #0000CC;
-    text-decoration: underline;
 }
 
 @media (max-width: 480px) {
