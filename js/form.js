@@ -26,5 +26,6 @@ form.addEventListener('submit', function(event){
 
     setTimeout(() => {
         feedbackElement.textContent = '';
-    }, 1500);
+    }, 3500);
+
 })
