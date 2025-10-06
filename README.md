@@ -35,7 +35,7 @@ O projeto está hospedado e acessível publicamente através do GitHub Pages.
 
 **Link de Acesso:**
 
-[https://ghostdev-creator.github.io/Portal-Opurtunidades/](https://ghostdev-creator.github.io/Portal-Opurtunidades/)
+[https://ghostdev-creator.github.io/Portal-Opurtunidades/](https://ghostdev-creator.github.io/Portal-de-Oportunidades/)
 
 ---
 
