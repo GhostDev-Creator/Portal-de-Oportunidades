@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="css/registro.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="images/image/logo.png" style="width: 32px; height: 32px;">
+</head>
+<body>
+    <div class="back-button-container">
+        <a href="login.html" class="back-button">
+            <span class="material-icons">
+                chevron_left
+            </span>
+        </a>
+    </div>
+
+    <div class="container">
+        <h2>Criar conta</h2>
+        <form id="registro-form"> 
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="Senha" required>
+            </div>
+            <div class="input-group">
+                <input type="tel" id="phone" name="phone" placeholder="Telefone (00)00000-0000" required>
+            </div>
+            
+            <div class="input-group">
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+            
+            <div class="input-group">
+                <input type="text" id="city" name="city" placeholder="Cidade (estado)" required>
+            </div>
+            <button type="submit" class="btn">Criar conta</button>
+        </form>
+    </div>
+
+    <script src="js/registro.js"></script>
+</body>
+</html>

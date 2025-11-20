@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta - Configurações</title>
+    <link rel="stylesheet" href="css/conta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="images/image/logo.png" alt="Logo Portal de Oportunidades">
+            <h1>
+                <span>Portal de</span><br><span class="primeira-cor">OPORTUNIDADES</span>
+            </h1>
+        </div>
+        <nav class="nav-menu">
+            <a href="dash.html">Início</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="contato.html">Contato</a>
+            <a href="conta.html">Conta</a>
+            <a href="index.html" class="logout-link">Sair</a> 
+        </nav>
+    </header>
+<main class="container">
+    <h2 style="text-align: center; margin-bottom: 30px; color: #000d97;">
+        <i class="fas fa-user primeira-cor"></i> Informações do Perfil
+    </h2>
+    
+    <div class="profile-form-container">
+        
+        <form class="profile-form" action="#" method="POST">
+            
+           <div class="profile-pic-area">
+    <img src="images/image/perfil.jpg" class="current-profile-pic" id="profile-img" alt="Foto de Perfil"> 
+    <div class="pic-actions">
+        <label for="upload-foto" class="upload-btn">
+            <i class="fas fa-upload"></i> Carregar Nova Foto
+        </label>
+        <input type="file" id="upload-foto" accept="image/*" style="display: none;"> 
+    </div>
+</div>
+
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" value="">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <div class="input-with-action">
+                    <input type="email" id="email" name="email" value="">
+                    <button type="button" class="action-btn">Alterar E-mail</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone </label>
+                <input type="tel" id="telefone" name="telefone" value="">
+            </div>
+            
+            <div class="form-group">
+                <label for="localizacao">Localização (Cidade/Estado)</label>
+                <input type="text" id="localizacao" name="localizacao" value="" >
+            </div>
+
+            <div class="form-group">
+                <label for="nascimento">Data de Nascimento </label>
+                <input type="date" id="nascimento" name="nascimento" value="" >
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="details-button" id="salvarBtn">Salvar Alterações</button>
+                <button type="button" class="cancel-button">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</main>
+    
+
+     <footer class="footer">
+        <p>© 2025 Portal de Oportunidades. Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="#"><img src="images/icons/icon-facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/icons/icon-x.png" alt="X"></a>
+            <a href="#">Política de Privacidade</a>
+        </div>
+    </footer>
+
+        <script src="js/conta.js"></script>
+</body>
+</html>

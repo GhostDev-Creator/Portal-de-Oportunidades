@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefinir Senha</title>
+    <link rel="stylesheet" href="css/senha.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="images/image/logo.png" style="width: 32px; height: 32px;">
+</head>
+<body>
+    <div class="back-button-container">
+        <a href="login.html" class="back-button">
+            <span class="material-icons">
+                chevron_left
+            </span>
+        </a>
+    </div>
+
+    <div class="container">
+        <h2>Redefinir senha</h2>
+        <form id="reset-form">
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    
+        <div id="new-password-section" style="display:none; margin-top: 20px;">
+            <h3>Definir Nova Senha</h3>
+            <input type="password" id="new-password" placeholder="Nova Senha" required style="padding: 10px; margin-bottom: 10px; width: 100%;">
+            <button type="button" id="confirm-reset-btn" class="btn primary-btn">Confirmar Nova Senha</button>
+        </div>
+    
+        <div class="message-success hidden" id="success-message">
+            <span class="material-icons">check</span>
+            <p>E-mail encontrado. Por favor, defina sua nova senha abaixo.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="js/senha.js"></script>
+</body>
+</html>

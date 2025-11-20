@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Oportunidades</title>
+    <link rel="stylesheet" href="css/dash.css">
+    <link rel="icon" href="images/image/logo.png" style="width: 32px; height: 32px;">
+    </head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <img src="images/image/logo.png" alt="Logo Portal de Oportunidades">
+            <h1>
+                <span>Portal de</span><br><span class="primeira-cor">OPORTUNIDADES</span>
+            </h1>
+        </div>
+        <nav class="nav-menu">
+            <a href="dash.html">Início</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="contato.html">Contato</a>
+            <a href="conta.html">Conta</a>
+            <a href="index.html" class="logout-link">Sair</a> 
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="tabs">
+            <button class="tab-button active" onclick="filterCards('all')">Todas</button>
+            <button class="tab-button" onclick="filterCards('concurso')">Concursos</button>
+            <button class="tab-button" onclick="filterCards('palestra')">Palestras</button>
+            <button class="tab-button" onclick="filterCards('edital')">Editais</button>
+            <button class="tab-button" onclick="filterCards('outros')">Outros</button>
+        </div>
+
+        <div class="cards-container">
+            <div class="card concurso">
+                <div class="card-header">
+                    <h2>Cores e Contraste</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/camera-4-fill.png" alt="Ícone fotografia" class="card-icon">
+                    <h3>Concurso de fotografia</h3>
+                    <p>Prazo de Inscrição: 05/12/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="1">Ver Detalhes</button>
+                </div>
+            </div>
+            <div class="card palestra">
+                <div class="card-header">
+                    <h2>Futuro da IA</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/icon-ia.png" alt="Ícone IA" class="card-icon">
+                    <h3>Palestra sobre Inteligência Artificial</h3>
+                    <p>Prazo de Inscrição: 10/11/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="2">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card edital">
+                <div class="card-header">
+                    <h2>Bolsas de Mestrado</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/icon-pesquisa.png" alt="Ícone Pesquisa" class="card-icon">
+                    <h3>Edital de Fomento à Pesquisa</h3>
+                    <p>Prazo de Inscrição: 20/11/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="3">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card concurso">
+                <div class="card-header">
+                    <h2>Expo Jovem Artista</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/icon-artes.png" alt="Ícone Artes Visuais" class="card-icon">
+                    <h3>Concurso de Artes Visuais</h3>
+                    <p>Prazo de Inscrição: 25/11/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="4">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card palestra">
+                <div class="card-header">
+                    <h2>Palestra sobre Empreendedorismo</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/icon-empreendedorismo.png" alt="Ícone Empreendedorismo" class="card-icon">
+                    <h3>Palestra sobre Empreendedorismo</h3>
+                    <p>Prazo de Inscrição: 15/11/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="5">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card outros">
+                <div class="card-header">
+                    <h2>Hackathon de Frontend</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/icon-frontend.png" alt="Ícone Frontend" class="card-icon">
+                    <h3>Tecnologia Front-End</h3>
+                    <p>Prazo de Inscrição: 15/12/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="6">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card concurso">
+                <div class="card-header">
+                    <h2>Roda de Ideias Culinárias</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/icon-culinaria.png" alt="Ícone Culinária" class="card-icon">
+                    <h3>Concurso de Culinária</h3>
+                    <p>Prazo de Inscrição: 30/11/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="7">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card outros">
+                <div class="card-header">
+                    <h2>Música e Dança</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/icon-musica.png" alt="Ícone Música e Dança" class="card-icon">
+                    <h3>Oficina de Ritmos Afro-Brasileiros</h3>
+                    <p>Prazo de Inscrição: 05/12/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="8">Ver Detalhes</button>
+                </div>
+            </div>
+            
+            <div class="card palestra">
+                <div class="card-header">
+                    <h2>Ciência para Todos</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/brain-fill.png" alt="Ícone Ciência" class="card-icon">
+                    <h3>Palestra sobre Divulgação Científica</h3>
+                    <p>Prazo de Inscrição: 01/12/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="9">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card concurso">
+                <div class="card-header">
+                    <h2>Startup Weekend</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/bar-chart-grouped-fill.png" alt="Ícone Startup" class="card-icon">
+                    <h3>Concurso de Inovação</h3>
+                    <p>Prazo de Inscrição: 10/12/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="10">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card concurso">
+                <div class="card-header">
+                    <h2>Literatura Contemporânea</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/book-open-line.png" alt="Ícone Literatura" class="card-icon">
+                    <h3>Concurso de Contos</h3>
+                    <p>Prazo de Inscrição: 15/01/2026</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="11">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card edital">
+                <div class="card-header">
+                    <h2>Sustentabilidade Urbana</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/leaf-fill.png" alt="Ícone Meio Ambiente" class="card-icon">
+                    <h3>Edital de Projetos Ambientais</h3>
+                    <p>Prazo de Inscrição: 20/12/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="12">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card palestra">
+                <div class="card-header">
+                    <h2>Design Thinking</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/lightbulb-ai-line.png" alt="Ícone Design" class="card-icon">
+                    <h3>Palestra sobre Inovação</h3>
+                    <p>Prazo de Inscrição: 28/11/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="13">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card concurso">
+                <div class="card-header">
+                    <h2>Festival de Cinema Independente</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/film-line.png" alt="Ícone Cinema" class="card-icon">
+                    <h3>Concurso de Curtas-Metragens</h3>
+                    <p>Prazo de Inscrição: 05/01/2026</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="14">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card outros">
+                <div class="card-header">
+                    <h2>Programação para Iniciantes</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/file-code-line.png" alt="Ícone Programação" class="card-icon">
+                    <h3>Workshop de Python</h3>
+                    <p>Prazo de Inscrição: 08/12/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="15">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card palestra">
+                <div class="card-header">
+                    <h2>Jogos Digitais e E-sports</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/gamepad-line.png" alt="Ícone Games" class="card-icon">
+                    <h3>Palestra sobre Mercado de Games</h3>
+                    <p>Prazo de Inscrição: 12/12/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="16">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card edital">
+                <div class="card-header">
+                    <h2>Teatro Experimental</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/artboard-fill.png" alt="Ícone Teatro" class="card-icon">
+                    <h3>Edital de Peças Teatrais</h3>
+                    <p>Prazo de Inscrição: 10/01/2026</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="17">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card edital">
+                <div class="card-header">
+                    <h2>Economia Criativa</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/bank-line.png" alt="Ícone Economia Criativa" class="card-icon">
+                    <h3>Edital de Apoio Cultural</h3>
+                    <p>Prazo de Inscrição: 28/12/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="18">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card outros">
+                <div class="card-header">
+                    <h2>Fotografia de Natureza</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/camera-4-fill.png" alt="Ícone Fotografia Natureza" class="card-icon">
+                    <h3>Workshop de Fotografia</h3>
+                    <p>Prazo de Inscrição: 03/12/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="19">Ver Detalhes</button>
+                </div>
+            </div>
+
+            <div class="card palestra">
+                <div class="card-header">
+                    <h2>Inclusão Digital</h2>
+                </div>
+                <div class="card-content">
+                    <img src="images/icons/accessibility-line.png" alt="Ícone Inclusão" class="card-icon">
+                    <h3>Palestra sobre Acessibilidade</h3>
+                    <p>Prazo de Inscrição: 22/11/2025</p>
+                </div>
+                <div class="card-footer">
+                    <button class="details-button" data-id="20">Ver Detalhes</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Portal de Oportunidades. Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="#"><img src="images/icons/icon-facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/icons/icon-x.png" alt="X"></a>
+            <a href="#">Política de Privacidade</a>
+        </div>
+    </footer>
+
+    <script src="js/dados.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
